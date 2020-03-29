@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMarker Application</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style></style>
+  </head>
+  <body onload="outputBookMarks()">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="card bg-gray mb-5">
+            <div class="card-header pt-5 px-4 pb-3">
+              <h1 class="text-center font-weight-light">
+                Bookmark your favourite sites.
+              </h1>
+            </div>
+            <div class="card-body">
+              <form id="myForm">
+                <div class="form-group">
+                  <label class="d-inline-block mr-2">
+                    site Name
+                  </label>
+                  <input
+                    id="siteName"
+                    type="text"
+                    placeholder="Website Name..."
+                    class="form-control form-control-md mb-4"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="d-inline-block mr-2">
+                    site URL
+                  </label>
+                  <input
+                    id="siteURL"
+                    type="text"
+                    placeholder="Website URL..."
+                    class="form-control form-control-md mb-4"
+                  />
+                </div>
+                <div class="form-group text-center">
+                  <button
+                    type="submit"
+                    id="submitBtn"
+                    class="d-inline-block btn btn-lg py-2 px-4"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div id="bookMarkerResults"></div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
